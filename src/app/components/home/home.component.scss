@@ -1,0 +1,13 @@
+.homewrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+app-sidenav{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
