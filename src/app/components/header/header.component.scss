@@ -1,0 +1,38 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  padding: 0px 10px;
+  .hamIcon{
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+nav{
+  margin-right: 10px;
+  ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    li{
+      margin-right: 10px;
+      cursor: pointer;
+
+      a{
+        text-decoration: none;
+        padding: 10px 15px;
+      color: #ffe;
+      border-radius: 10px;
+      transition: all 0.3s linear;
+      }
+    }
+    li:hover a{
+      background: white;
+      color: #222;
+    }
+  }
+}

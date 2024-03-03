@@ -1,1 +1,7 @@
-<p>sidenav works!</p>
+<div class="sidenav-wrapper" [ngClass]="{'show-side-nav':toggleNav}">
+  <ul>
+    <li (click)="navigateTo('skills')">Skills</li>
+    <li (click)="navigateTo('trainings')">Trainings</li>
+    <li (click)="navigateTo('developments')">Developments</li>
+  </ul>
+</div>

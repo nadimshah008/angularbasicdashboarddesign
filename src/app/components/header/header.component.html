@@ -1,1 +1,17 @@
-<p>header works!</p>
+<div class="header">
+  <i class="fa-solid fa-bars hamIcon" (click)="toggleSidenav()"></i>
+   <nav>
+    <ul>
+
+      <li> <a [routerLink]="['/home/skills']" routerLinkActive="router-link-active">
+      Skills
+      </a> </li>
+      <li><a [routerLink]="['/home/trainings']" routerLinkActive="router-link-active">
+        Trainings
+        </a></li>
+      <li><a [routerLink]="['/home/developments']" routerLinkActive="router-link-active">
+        Developments
+        </a></li>
+    </ul>
+   </nav>
+</div>

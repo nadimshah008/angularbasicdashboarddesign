@@ -1,0 +1,36 @@
+.sidenav-wrapper{
+  height: 100vh;
+  width: 200px;
+  background: linear-gradient(-45deg,white,black);  z-index: 10;
+  transition: all 0.3s linear;
+  position: absolute;
+  left: -200px;
+  top: 7%;
+  z-index: 10;
+  ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    li{
+      background: linear-gradient(45deg,white,black);
+      padding: 7px 15px;
+      margin-bottom: 5px;
+      border-radius: 10px;
+      margin-top: 10px;
+      width: 100px;
+      text-align: center;
+      color: #fff;
+      cursor: pointer;
+    }
+    li:hover{
+      box-shadow: 0 0 10px 5px #fff;
+    }
+  }
+}
+.show-side-nav{
+  left: 0%;
+}

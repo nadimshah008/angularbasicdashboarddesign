@@ -9,7 +9,7 @@ import { DevelopmentsComponent } from './components/developments/developments.co
 const routes: Routes = [{path:'',component:LoginComponent},{path:'home',component:HomeComponent,children:[
   {path:'skills',component:SkillsComponent},
   {path:'trainings',component:TrainingsComponent},
-  {path:'development',component:DevelopmentsComponent}
+  {path:'developments',component:DevelopmentsComponent}
 ]}];
 
 @NgModule({
