@@ -20,5 +20,8 @@ export class SidenavComponent implements OnInit {
   navigateTo(data:any){
     this.router.navigate([`home/${data}`])
   }
+  logout(){
+    this.router.navigate([''])
+  }
 
 }
