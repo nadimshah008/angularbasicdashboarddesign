@@ -1,17 +1,35 @@
-<div class="sidenav-wrapper" [ngClass]="{'show-side-nav':toggleNav===false}">
+<div
+  class="sidenav-wrapper"
+  [ngClass]="{ 'show-side-nav': toggleNav === false }"
+>
   <div class="profile-wrapper">
     <div class="profile-icon">
       <div class="icon-wrapper">
-        <img src="../../../assets/user.png" alt="" class="profile-img">
+        <img src="../../../assets/user.png" alt="" class="profile-img" />
       </div>
-        <p>Admin</p>
+      <p>Admin</p>
     </div>
   </div>
 
   <ul>
-    <li (click)="navigateTo('skills')">Skills</li>
-    <li (click)="navigateTo('trainings')">Trainings</li>
-    <li (click)="navigateTo('developments')">Developments</li>
-    <li (click)="logout()">Logout</li>
+    <li>
+      <a [routerLink]="['/home/skills']" routerLinkActive="router-link-active"
+        >Skills</a
+      >
+    </li>
+    <li>
+      <a
+        [routerLink]="['/home/trainings']"
+        routerLinkActive="router-link-active"
+        >Trainings</a
+      >
+    </li>
+    <li>
+      <a
+        [routerLink]="['/home/developments']"
+        routerLinkActive="router-link-active"
+        >Developments</a
+      >
+    </li>
   </ul>
 </div>
