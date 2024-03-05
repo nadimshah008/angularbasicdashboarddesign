@@ -29,10 +29,17 @@ nav{
       border-radius: 10px;
       transition: all 0.3s linear;
       }
+      a.active{
+        background: green;
+      }
     }
     li:hover a{
       background: white;
       color: #222;
     }
   }
+}
+
+.router-link-active{
+  background: green;
 }

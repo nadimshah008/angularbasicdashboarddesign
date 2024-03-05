@@ -1,4 +1,13 @@
-<div class="sidenav-wrapper" [ngClass]="{'show-side-nav':toggleNav}">
+<div class="sidenav-wrapper" [ngClass]="{'show-side-nav':toggleNav===false}">
+  <div class="profile-wrapper">
+    <div class="profile-icon">
+      <div class="icon-wrapper">
+        <img src="../../../assets/user.png" alt="" class="profile-img">
+      </div>
+        <p>Admin</p>
+    </div>
+  </div>
+
   <ul>
     <li (click)="navigateTo('skills')">Skills</li>
     <li (click)="navigateTo('trainings')">Trainings</li>

@@ -34,3 +34,47 @@
 .show-side-nav{
   left: 0%;
 }
+
+.profile-wrapper{
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  background: rgb(49, 121, 203)
+}
+.profile-wrapper::before{
+  content: "";
+  height: 200%;
+  width: 200%;
+  background: rgb(70, 70, 179);
+  transform: rotate(145deg);
+  right: 40%;
+  position: relative;
+  top: 30%;
+}
+.profile-icon{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 999;
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .icon-wrapper{
+    height: 80px;
+    width: 80px;
+    .profile-img{
+      height: 100%;
+      width: 100%;
+      object-fit: scale-down;
+    }
+  }
+  p{
+    color: #fff;
+  }
+}
